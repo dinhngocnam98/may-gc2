@@ -3,7 +3,7 @@ import Config from './common/config';
 import { MongooseModule } from '@nestjs/mongoose';
 import { ConfigModule, ConfigService } from '@nestjs/config';
 import { MongoDbConfig } from './common/config.interface';
-import { Gc3Module } from './gc3/gc3.module';
+import { Gc2Module } from './gc2/gc2.module';
 @Module({
   imports: [
     ConfigModule.forRoot({
@@ -17,7 +17,7 @@ import { Gc3Module } from './gc3/gc3.module';
       }),
       inject: [ConfigService],
     }),
-    Gc3Module,
+    Gc2Module,
   ],
   controllers: [],
   providers: [],
