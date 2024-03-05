@@ -37,7 +37,7 @@ export class Gc2Service {
         !file.toUpperCase().includes('IRREPORT') &&
         !file.toUpperCase().includes('SAVED')
       ) {
-        await this.readReport(newData, file);
+         setTimeout(() =>{ this.readReport(newData, file) }, 3000) ;
       }
     } else {
       const shortcuts = await this.readShortcuts(data);

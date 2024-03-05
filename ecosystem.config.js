@@ -9,7 +9,7 @@ module.exports = {
       merge_logs: true,
       env: {
         DATABASE_URL:
-          'mongodb+srv://hakinam2701:884743Nam@read-file.kujuw9p.mongodb.net/read-file',
+          'mongodb://readTXT:Admin%40123@10.86.5.132:27017/Reports',
         PORT: 4000,
       },
     },
